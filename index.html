@@ -4,11 +4,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thomas & Luz Signature Cleaning LLC — Premium Cleaning Services</title>
-  <meta name="description"
-    content="Thomas & Luz Signature Cleaning LLC offers deep cleans, move-in/out, commercial & residential cleaning. Bilingual, reliable, local. Serving your space with our signature touch.">
-  <meta name="keywords"
-    content="cleaning service, deep cleaning, move-in cleaning, commercial cleaning, residential cleaning, bilingual cleaning, TLSC">
+  <title>Thomas & Luz Signature Cleaning LLC | Deep Cleaning & Move-In/Out Cleaning Columbus, OH</title>
+
+  <meta name="description" content="Professional bilingual cleaning service in Columbus, Ohio. Deep cleans, move-in/move-out, commercial & residential cleaning. Reliable, detailed, trusted. Call (614) 902-5301."/>
+
+  <meta name="keywords" content="cleaning service Columbus Ohio, deep cleaning Columbus OH, move in move out cleaning Columbus, commercial cleaning Columbus, bilingual cleaning service Ohio, house cleaning near me Columbus, residential cleaning Columbus OH, TLSC cleaning, Thomas and Luz cleaning"/>
+
+  <meta property="og:title" content="Thomas & Luz Signature Cleaning LLC — Columbus, OH"/>
+  <meta property="og:description" content="Bilingual cleaning service in Columbus OH. Deep cleans, move-in/out, commercial & residential. Book today — (614) 902-5301."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://thomas-cleaning-services.vercel.app/"/>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Thomas & Luz Signature Cleaning LLC",
+    "description": "Bilingual professional cleaning services in Columbus, Ohio. Deep cleans, move-in/out, commercial and residential cleaning.",
+    "telephone": "(614) 902-5301",
+    "email": "Nubia@thomasluzsignaturecleaning.com",
+    "url": "https://thomas-cleaning-services.vercel.app/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Columbus",
+      "addressRegion": "OH",
+      "addressCountry": "US"
+    },
+    "areaServed": [
+      "Columbus OH",
+      "Dublin OH",
+      "Westerville OH",
+      "Hilliard OH",
+      "Grove City OH",
+      "Reynoldsburg OH",
+      "Gahanna OH",
+      "Upper Arlington OH"
+    ],
+    "priceRange": "$$",
+    "openingHours": "Mo-Fr 08:00-18:00",
+    "sameAs": [
+      "https://www.instagram.com/thomasluzsignaturecleaning"
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -1940,6 +1978,123 @@
       letter-spacing: 2px;
     }
 
+    /* ========== FAQ SECTION ========== */
+    #faq {
+      background: var(--black);
+      position: relative;
+    }
+
+    .faq-container {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .faq-item {
+      background: var(--card-dark);
+      border: 1px solid rgba(201, 162, 39, 0.15);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .faq-item:hover {
+      border-color: rgba(201, 162, 39, 0.35);
+      box-shadow: var(--glow-gold);
+    }
+
+    .faq-trigger {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 22px 28px;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      outline: none;
+      font-family: var(--font-heading);
+    }
+
+    .faq-question {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      color: var(--gold-light);
+      font-size: 1.05rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .faq-question-es {
+      color: var(--lavender);
+      font-size: 0.82rem;
+      font-family: var(--font-body);
+      font-style: italic;
+      letter-spacing: 0.5px;
+      text-transform: none;
+      font-weight: normal;
+      margin-top: 2px;
+    }
+
+    .faq-icon {
+      color: var(--gold);
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 1;
+      transition: transform 0.3s ease, color 0.3s ease;
+      width: 20px;
+      text-align: center;
+      user-select: none;
+    }
+
+    .faq-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .faq-answer {
+      padding: 0 28px 22px;
+      color: var(--white);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    /* Active state styling */
+    .faq-item.active {
+      border-color: var(--gold);
+      background: var(--card-hover);
+    }
+
+    .faq-item.active .faq-trigger {
+      padding-bottom: 15px;
+    }
+
+    .faq-item.active .faq-icon {
+      color: var(--lavender);
+    }
+
+    @media (max-width: 768px) {
+      .faq-trigger {
+        padding: 18px 20px;
+      }
+      .faq-answer {
+        padding: 0 20px 18px;
+      }
+      .faq-question {
+        font-size: 0.95rem;
+      }
+    }
+
     /* ========== RESPONSIVE ========== */
     @media (max-width: 1024px) {
       .trust-grid {
@@ -2852,6 +3007,142 @@
     </div>
   </section>
 
+  <!-- ========== FAQ SECTION ========== -->
+  <section id="faq" class="section-padding">
+    <h2 class="section-title fade-in">Frequently Asked Questions</h2>
+    <p class="section-subtitle fade-in">Preguntas Frecuentes — Warm, Professional Service for Columbus & Surrounding Areas</p>
+
+    <div class="faq-container fade-in">
+      <!-- Q1 -->
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-question">
+            Do you bring your own cleaning supplies?
+            <span class="faq-question-es">¿Traen sus propios productos de limpieza?</span>
+          </span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-content">
+          <div class="faq-answer">
+            <p>Yes, we bring our own high-quality, professional-grade cleaning supplies and equipment to every job. If you have any specific preferences or preferred products you'd like us to use on particular surfaces in your home, just let us know, and we'll be happy to accommodate you.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-question">
+            How long does a cleaning take?
+            <span class="faq-question-es">¿Cuánto tiempo tarda una limpieza?</span>
+          </span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-content">
+          <div class="faq-answer">
+            <p>The duration depends on the size of your home and the type of service selected. A standard cleaning for a typical home in the Columbus area might take 2 to 4 hours, whereas a detailed deep cleaning or a move-in/out service can take 4 to 8 hours. We focus on delivering a thorough, signature clean and never rush our work.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-question">
+            Do I need to be home during the cleaning?
+            <span class="faq-question-es">¿Necesito estar en casa durante la limpieza?</span>
+          </span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-content">
+          <div class="faq-answer">
+            <p>No, you do not need to be home. Many of our Columbus clients prefer to provide us with entry instructions (such as a key code, garage code, or lockbox) so they can go about their day. If you choose to be home during the cleaning, that is completely fine too—we are happy to work around you.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-question">
+            What areas in Columbus do you serve?
+            <span class="faq-question-es">¿Qué áreas de Columbus atienden?</span>
+          </span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-content">
+          <div class="faq-answer">
+            <p>We proudly serve the entire Columbus metropolitan area, including Dublin, Westerville, Hilliard, Grove City, Reynoldsburg, Gahanna, and Upper Arlington. If you are located in a neighboring community, please reach out to us to confirm if we can service your home.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q5 -->
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-question">
+            How do I book a recurring plan?
+            <span class="faq-question-es">¿Cómo reservo un plan recurrente?</span>
+          </span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-content">
+          <div class="faq-answer">
+            <p>You can request a recurring plan by filling out our online booking form or calling us directly. We offer weekly plans (10-15% off) and bi-weekly plans (5-10% off) to keep your space consistently fresh, as well as monthly cleaning options at standard rates.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q6 -->
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-question">
+            What is the difference between standard and deep cleaning?
+            <span class="faq-question-es">¿Cuál es la diferencia entre limpieza estándar y profunda?</span>
+          </span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-content">
+          <div class="faq-answer">
+            <p>Standard cleaning is routine maintenance to keep your home fresh, covering dusting, vacuuming, mopping, and basic sanitization. Deep cleaning is a detailed, top-to-bottom service that targets built-up grime, scrubs tile grout, hand-wipes baseboards, cleans blinds, and rejuvenates all hard-to-reach areas.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q7 -->
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-question">
+            Do you offer same-day service?
+            <span class="faq-question-es">¿Ofrecen servicio el mismo día?</span>
+          </span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-content">
+          <div class="faq-answer">
+            <p>While we recommend scheduling in advance to guarantee your preferred time, we do our best to accommodate last-minute or same-day cleaning requests in Columbus whenever our schedule permits. Please call us directly at (614) 902-5301 for immediate availability.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q8 -->
+      <div class="faq-item">
+        <button class="faq-trigger" aria-expanded="false">
+          <span class="faq-question">
+            Is your team bilingual?
+            <span class="faq-question-es">¿Su equipo es bilingüe?</span>
+          </span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-content">
+          <div class="faq-answer">
+            <p>Yes, our team is bilingual in English and Spanish. We value clear communication and want all of our clients in Columbus and surrounding suburbs to feel fully comfortable, understood, and respected. ¡Hablamos español!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ========== CONTACT SECTION ========== -->
   <section id="contact" class="section-padding">
     <h2 class="section-title fade-in">Book Your Clean</h2>
@@ -2885,6 +3176,14 @@
             <p class="contact-item-label">Instagram</p>
             <p class="contact-item-text"><a href="https://instagram.com/thomasluzsignaturecleaning" target="_blank"
                 rel="noopener">@thomasluzsignaturecleaning</a></p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-item-icon">📍</span>
+          <div>
+            <p class="contact-item-label">Serving / Zona de Servicio</p>
+            <p class="contact-item-text" style="font-size: 0.85rem; font-style: italic; color: var(--grey-light);">Serving: Columbus · Dublin · Westerville · Hilliard · Grove City · Reynoldsburg · Gahanna · Upper Arlington</p>
           </div>
         </div>
 
@@ -3018,6 +3317,7 @@
     </div>
 
     <p class="footer-bilingual">Tu espacio, nuestra firma.</p>
+    <p style="color: var(--grey); font-size: 0.75rem; letter-spacing: 2px; margin-bottom: 20px; font-style: italic;">Serving: Columbus · Dublin · Westerville · Hilliard · Grove City · Reynoldsburg · Gahanna · Upper Arlington</p>
     <p class="footer-copy">© 2026 Thomas & Luz Signature Cleaning LLC. All Rights Reserved.</p>
   </footer>
 
@@ -3068,6 +3368,35 @@
     }, observerOptions);
 
     fadeEls.forEach(el => fadeObserver.observe(el));
+
+    // === FAQ Accordion ===
+    document.querySelectorAll('.faq-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const item = trigger.closest('.faq-item');
+        const content = item.querySelector('.faq-content');
+        const icon = trigger.querySelector('.faq-icon');
+        const isOpen = item.classList.contains('active');
+
+        // Close all other FAQ items (standard accordion behavior)
+        document.querySelectorAll('.faq-item').forEach(otherItem => {
+          if (otherItem !== item && otherItem.classList.contains('active')) {
+            otherItem.classList.remove('active');
+            otherItem.querySelector('.faq-content').style.maxHeight = '0';
+            otherItem.querySelector('.faq-icon').textContent = '+';
+          }
+        });
+
+        if (isOpen) {
+          item.classList.remove('active');
+          content.style.maxHeight = '0';
+          icon.textContent = '+';
+        } else {
+          item.classList.add('active');
+          content.style.maxHeight = content.scrollHeight + 'px';
+          icon.textContent = '−';
+        }
+      });
+    });
 
     // === Before/After Slider ===
     document.querySelectorAll('.ba-slider').forEach(slider => {
